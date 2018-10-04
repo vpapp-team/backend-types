@@ -81,7 +81,7 @@
 >
 > ## Error
 >> | Field | Type | Description | nullable |
->> | --- | --- | --- | --- |:---:|
+>> | --- | --- | --- |:---:|
 >> | 0 | [UUID](#uuid) | errors uuid | ❌ |
 >> | 1 | [Time](#time) | time the server received the error | ❌ |
 >> | 2 | [Version](#version) | version of the error sending client | ❌ |
@@ -96,17 +96,15 @@
 >
 > ## Feedback
 >> | Field | Type | Description | nullable |
->> | --- | --- | --- | --- |:---:|
+>> | --- | --- | --- |:---:|
 >> | 0 | [UUID](#uuid) | errors uuid | ❌ |
 >> | 1 | [Time](#time) | time the server received the error | ❌ |
 >> | 2 | [Version](#version) | version of the error sending client | ❌ |
 >> | 3 | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | userAgent of the error sending client | ❌ |
 >> | 4 | [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | platform of the error sending client | ❌ |
-
 >> | 5 | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | the name of the feedback giver | ✔ |
 >> | 6 | [UUID](#uuid) | the email of the feedback giver | ✔ |
 >> | 7 | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | the feedback itself | ❌ |
-
 >> | 8 | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | msg to respond with on the next request | ✔ |
 >> | 9 | [Time](#time) | time the msgOnReq was set | ✔ |
 >> | 10 | [Time](#time) | time the msgOnReq was send | ✔ |

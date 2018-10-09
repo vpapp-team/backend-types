@@ -7,12 +7,13 @@
 | [General](#general) | [Data](#datatypes) |
 |:---:|:---:|
 | [ClassDiscriminator](#classdiscriminator) | [CalendarEvent](#calendarevent) |
-| [LessonDiscriminator](#lessondiscriminator) | [Error](#error) |
-| [LessonRange](#lessonrange) | [Feedback](#feedback) |
-| [Range](#range) | [LastUpdate](#lastupdate) |
-| [Time](#time) | [Lesson](#lesson) |
-| [UUID](#uuid) | [Menu](#menu) |
-| [Version](#version) | [Room](#room) |
+| [LessonDiscriminator](#lessondiscriminator) | [Endpoints](#Endpoints) |
+| [LessonRange](#lessonrange) | [Error](#error) |
+| [Range](#range) | [Feedback](#feedback) |
+| [Time](#time) | [LastUpdate](#lastupdate) |
+| [UUID](#uuid) | [Lesson](#lesson) |
+| [Version](#version) | [Menu](#menu) |
+| &#8203; | [Room](#room) |
 | &#8203; | [Stand-in](#stand-in) |
 | &#8203; | [Teacher](#teacher) |
 | &#8203; | [Timetable](#timetable) |
@@ -78,6 +79,16 @@
 >> | 5 | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | &#8203; | location | ✔ |
 >> | 6 | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | &#8203; | isRecurring | ❌ |
 >> | 7 | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | `[isRecurring]==true` | humanRecurrenceRule | ❌ |
+>
+> ## Endpoints
+>> | Field | Type | Description | nullable |
+>> | --- | --- | --- |:---:|
+>> | version | [version](#version) | the version of the connecting device | ❌ |
+>> | platform | `ios`, `backend` or `android` | the platform of the connecting device | ❌ |
+>> | apiVersion | [version](#version) | the backend version to request | ❌ |
+>> | isRecommended | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | is it the recommended version? | ❌ |
+>> | isOutdated | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | is it a outdated version? | ❌ |
+>> | devVersion | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | is it a developer version? | ❌ |
 >
 > ## Error
 >> | Field | Type | Description | nullable |
